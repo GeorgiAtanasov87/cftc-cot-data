@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    build:
+      context: jupyter
+      target: miniconda
+    ports:
+      - '8888:8888'
+    volumes:
+      - .:/opt/notebooks
+
+#   dash:
+#     build:
+#       context: dash
+#       target: dash
+#     volumes:
+#       - ./dash:/opt/dash
+#       - ./data:/opt/dash/dam_data
+#     ports:
+#       - "8050:8050"
