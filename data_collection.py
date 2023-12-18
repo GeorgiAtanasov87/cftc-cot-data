@@ -1,3 +1,4 @@
+"""Run python data_collection.py to download and aggregate all data to a single parquet file."""
 import requests
 from pathlib import Path
 import os
